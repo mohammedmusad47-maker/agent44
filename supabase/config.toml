@@ -1,0 +1,7 @@
+project_id = "chuzgwilzttxytcltmvi"
+
+[functions.elevenlabs-signed-url]
+verify_jwt = false
+
+[functions.elevenlabs-webrtc]
+verify_jwt = false

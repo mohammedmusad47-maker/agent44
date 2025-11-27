@@ -1,0 +1,10 @@
+-- Add address fields to profiles table
+ALTER TABLE public.profiles
+ADD COLUMN IF NOT EXISTS address_completed BOOLEAN DEFAULT FALSE,
+ADD COLUMN IF NOT EXISTS residence_type TEXT,
+ADD COLUMN IF NOT EXISTS city TEXT,
+ADD COLUMN IF NOT EXISTS block TEXT,
+ADD COLUMN IF NOT EXISTS road TEXT,
+ADD COLUMN IF NOT EXISTS house_number TEXT,
+ADD COLUMN IF NOT EXISTS building_number TEXT,
+ADD COLUMN IF NOT EXISTS flat_number TEXT;
